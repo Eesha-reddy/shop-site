@@ -1,0 +1,119 @@
+/* Container for the whole page */
+.product-page {
+    padding: 2rem;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Page title */
+  .page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Grid container */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  /* Product cards */
+  .product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Product image */
+  .product-card img {
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  /* Product title */
+  .product-card h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  /* Product price */
+  .product-card p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: auto;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .product-card img {
+      height: 140px;
+    }
+  
+    .page-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
+
+  .product-list-container {
+    padding: 20px;
+  }
+  
+  .category-filter {
+    margin-bottom: 20px;
+  }
+  
+  .category-filter button {
+    margin: 0 10px 10px 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .category-filter .active {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fafafa;
+  }
+  
+  .product-card img {
+    height: 150px;
+    object-fit: contain;
+  }
+  
